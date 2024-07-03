@@ -1,0 +1,214 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.top-buttons a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-buttons a:hover {
+    background-color: #555;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Estilos da seção de introdução */
+.intro {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.intro p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.intro .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.intro .btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilos da seção de recursos */
+.features {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.features h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.features ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos do carrossel de imagens */
+.carousel {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.carousel h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Suporte para scroll suave no iOS */
+}
+
+.slide {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos da seção de call to action */
+.cta {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.cta p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.cta .btn {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta .btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

@@ -1,0 +1,107 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.top-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.top-buttons a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.top-buttons a:hover {
+    background-color: #555;
+}
+
+.logo {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+/* Estilos da seção de informações de contato */
+.contact-info {
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+}
+
+.contact-links {
+    margin-top: 1em;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-links a.btn-whatsapp {
+    background-color: #25D366;
+}
+
+.contact-links a.btn-instagram {
+    background-color: #E4405F;
+}
+
+.contact-links a:hover {
+    opacity: 0.8;
+}
+
+/* Estilos do rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    width: 100%;
+}
