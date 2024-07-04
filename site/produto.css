@@ -1,157 +1,157 @@
-/* Estilos gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
 }
 
-/* Estilos do cabeçalho */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.top-buttons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.top-buttons a {
-    margin-right: 10px;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.top-buttons a:hover {
-    background-color: #555;
-}
-
-.logo {
-    margin: 0 auto;
-    max-width: 200px;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-/* Estilos da seção de produtos */
-.product {
+    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.product-info {
-    flex: 1;
-    text-align: left;
-}
-
-.product-info h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.product-info p {
-    font-size: 1.1em;
-    margin-bottom: 1em;
-}
-
-.product-info .btn {
-    padding: 10px 20px;
-    text-decoration: none;
+header .top-buttons a {
     color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
 }
 
-.product-info .btn:hover {
-    background-color: #45a049;
+header .top-buttons a:hover {
+    color: #ffd700;
 }
 
-.product-image {
-    flex: 1;
+header .logo h1 {
+    margin: 0;
+}
+
+.product-combo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 2rem;
+}
+
+.combo-images {
+    display: flex;
+}
+
+.combo-item {
     text-align: center;
+    margin: 0 1rem;
 }
 
-.product-image img {
-    max-width: 100%;
-    height: auto;
+.combo-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.combo-item img:hover {
+    transform: scale(1.05);
+}
+
+.combo-item .original-price {
+    color: #ff6347;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.combo-item .link-info {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Estilos da seção de avaliações */
+.combo-item .link-info:hover {
+    background-color: #1c86ee;
+    transform: scale(1.05);
+}
+
+.combo-details {
+    text-align: center;
+    max-width: 400px;
+}
+
+.combo-details h3 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.combo-details p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.combo-details .btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.combo-details .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
 .reviews {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.reviews h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 1em;
-    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 2rem;
 }
 
 .review {
-    margin-bottom: 1em;
-}
-
-.reviewer-info {
     display: flex;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
-.reviewer-info img {
-    width: 50px;
-    height: 50px;
+.review img {
     border-radius: 50%;
-    margin-right: 10px;
-}
-
-.reviewer-info p {
-    margin: 0;
-    font-weight: bold;
+    width: 50px;
+    margin-right: 1rem;
 }
 
 .review p {
-    font-size: 1.1em;
-    line-height: 1.6;
+    margin: 0;
+    color: #ddd;
 }
 
-/* Estilos do rodapé */
 footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    margin-top: auto;
-    width: 100%;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
 }
