@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curso de Marketing Digital</title>
+    <title>Resultados dos Nossos Alunos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="main.css">
+    <style>
+        /* CSS inline pode ser adicionado aqui se necessário */
+    </style>
 </head>
 <body>
     <header id="header">
-        <div class="top-buttons">
-            <a href="#" class="btn">Home</a>
-            <a href="produto.html" class="btn">Produtos</a>
-            <a href="#" class="btn">Contato</a>
-        </div>
         <div class="logo">
             <h1>Seu Logo</h1>
         </div>
+        <nav class="top-buttons">
+            <a href="#" class="btn">Home</a>
+            <a href="produto.html" class="btn">Produtos</a>
+            <a href="#" class="btn">Contato</a>
+        </nav>
     </header>
 
     <main>
@@ -30,41 +35,93 @@
             <ul>
                 <li>Conteúdo prático e atualizado</li>
                 <li>Exemplos reais e estudos de caso</li>
-                <li>Suporte individualizado</li>
-                <li>Acesso vitalício ao curso</li>
+                <li>Acesso vitalício ao material</li>
+                <li>Suporte exclusivo para alunos</li>
             </ul>
         </section>
 
-        <section class="carousel">
-            <h2>Carrossel de Imagens</h2>
-            <div class="carousel-container">
-                <div class="slide">
-                    <img src="slide1.jpg" alt="Slide 1">
-                </div>
-                <div class="slide">
-                    <img src="slide2.jpg" alt="Slide 2">
-                </div>
-                <div class="slide">
-                    <img src="slide3.jpg" alt="Slide 3">
+        <section class="results">
+            <div class="elementor-element elementor-element-4728b9ad scroll-bottom elementor-widget elementor-widget-heading ativo" data-id="4728b9ad" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                    <h2 class="elementor-heading-title elementor-size-default">*RESULTADOS DOS NOSSOS ALUNOS*</h2>
                 </div>
             </div>
-            <div class="controls">
-                <button id="prevBtn">Anterior</button>
-                <button id="nextBtn">Próximo</button>
+
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/DEP1_1x.webp" alt="DEP1_1x.webp"></div>
+                <div class="item"><img src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/DEP2_1x.webp" alt="DEP2_1x.webp"></div>
+                <div class="item"><img src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/DEP3_1x.webp" alt="DEP3_1x.webp"></div>
+                <div class="item"><img src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/DEP4_1x.webp" alt="DEP4_1x.webp"></div>
+                <div class="item"><img src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/DEP5_1x.webp" alt="DEP5_1x.webp"></div>
+            </div>
+
+            <div class="card-panel">
+                <h2>NÃO, NÃO SÃO 12 VEZES DE R$19,90!</h2>
+                <ul>
+                    <li>4x DE R$5,34</li>
+                    <li>ou R$19,90 à vista!</li>
+                </ul>
+                <a href="https://pay.cakto.com.br/CG6miE9" class="btn">GARANTIR MINHA VAGA!</a>
+                <p>Compra segura!</p>
             </div>
         </section>
 
-        <section class="cta">
-            <h2>Garanta sua vaga agora!</h2>
-            <p>Inscreva-se hoje e comece a transformar sua presença online.</p>
-            <a href="#" class="btn btn-primary">Inscreva-se Agora</a>
+        <!-- Seção de Perguntas Frequentes -->
+        <section class="faq">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <h3>Como faço para acessar o curso após a compra?</h3>
+                <p>Você receberá um e-mail com as instruções de acesso imediatamente após a confirmação do pagamento.</p>
+            </div>
+            <div class="faq-item">
+                <h3>O curso possui certificado de conclusão?</h3>
+                <p>Sim, ao finalizar todas as aulas e atividades você poderá emitir seu certificado digital.</p>
+            </div>
+            <div class="faq-item">
+                <h3>É possível assistir às aulas em dispositivos móveis?</h3>
+                <p>Sim, nosso site é totalmente responsivo e você pode acessar o curso pelo celular, tablet ou computador.</p>
+            </div>
         </section>
+        <!-- Fim da Seção de Perguntas Frequentes -->
+        
     </main>
 
     <footer>
-        <p>&copy; 2024 Curso de Marketing Digital. Todos os direitos reservados.</p>
+        <div class="footer-content">
+            <p>&copy; 2024 Seu Site. Todos os direitos reservados.</p>
+        </div>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.owl-carousel').owlCarousel({
+                items: 4, /* Número de itens visíveis */
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive:{
+                    0:{
+                        items: 1 /* Número de itens visíveis em telas menores */
+                    },
+                    600:{
+                        items: 3 /* Número de itens visíveis em telas médias */
+                    },
+                    1000:{
+                        items: 4 /* Número de itens visíveis em telas maiores */
+                    }
+                }
+            });
 
-    <script src="scripts.js"></script>
+            // Script para perguntas frequentes
+            $('.faq-item').click(function(){
+                $(this).toggleClass('active');
+                $(this).find('p').slideToggle(300);
+            });
+        });
+    </script>
 </body>
 </html>

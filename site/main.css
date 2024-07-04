@@ -1,101 +1,73 @@
-/* Estilos gerais */
+/* Estilo geral */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-}
-
-/* Estilos do cabeçalho */
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    position: relative;
-    text-align: center;
-    transition: background-color 0.3s ease;
-}
-
-.top-buttons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-}
-
-.top-buttons a {
-    margin-right: 10px;
-    color: #fff;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.top-buttons a:hover {
-    background-color: #555;
-}
-
-.logo {
-    margin: 0 auto;
-    max-width: 200px;
-}
-
-.logo h1 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-/* Estilos da seção de introdução */
-.intro {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.intro h2 {
-    font-size: 2em;
+    background: #fff; /* Fundo branco */
     color: #333;
-    margin-bottom: 0.5em;
 }
 
-.intro p {
-    font-size: 1.1em;
-    margin-bottom: 1em;
-}
-
-.intro .btn {
-    padding: 10px 20px;
-    text-decoration: none;
+header {
+    background-color: #000; /* Fundo preto */
     color: #fff;
-    background-color: #4CAF50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header .top-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+header .top-buttons a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #333; /* Botões pretos */
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+header .top-buttons a:hover {
+    background-color: #555; /* Hover dos botões pretos */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro, .features, .results, .cta, .faq {
+    margin: 20px 0;
+}
+
+.intro h2, .features h2, .results h2, .cta h2, .faq h2 {
+    color: #000; /* Títulos pretos */
+    font-size: 2em;
+}
+
+.intro p, .cta p, .faq p {
+    font-size: 1.2em;
+}
+
+.btn-primary {
+    background-color: #333; /* Botões pretos */
+    color: #fff;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.intro .btn:hover {
-    background-color: #45a049;
-}
-
-/* Estilos da seção de recursos */
-.features {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.features h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 0.5em;
+.btn-primary:hover {
+    background-color: #555; /* Hover dos botões pretos */
 }
 
 .features ul {
@@ -103,112 +75,133 @@ header {
     padding: 0;
 }
 
-.features ul li {
+.features li {
+    background-color: #333; /* Fundo preto dos itens */
+    color: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.features li:hover {
+    background-color: #555; /* Hover dos itens pretos */
+}
+
+.results {
+    padding: 50px;
+    text-align: center;
+    background: #fff; /* Fundo branco */
+}
+
+.results .elementor-heading-title {
+    margin-bottom: 20px;
+}
+
+.card-panel {
+    background-color: #fff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.card-panel h2 {
+    color: #000; /* Títulos pretos */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.card-panel ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-panel ul li {
+    color: #555;
+    font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-/* Estilos do carrossel de imagens */
-.carousel {
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.carousel h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.carousel-container {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch; /* Suporte para scroll suave no iOS */
-}
-
-.slide {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    margin-right: 10px;
-    border-radius: 5px;
-    overflow: hidden;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-.controls {
-    margin-top: 10px;
-    text-align: center;
-}
-
-.controls button {
-    padding: 10px 20px;
-    margin: 0 5px;
+.card-panel a.btn {
+    background-color: #333; /* Botões pretos */
+    color: #fff;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
-    background-color: #4CAF50;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.controls button:hover {
-    background-color: #45a049;
-}
-
-/* Estilos da seção de call to action */
-.cta {
-    background-color: #f9f9f9;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.cta h2 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 0.5em;
-}
-
-.cta p {
-    font-size: 1.1em;
-    margin-bottom: 1em;
-}
-
-.cta .btn {
-    padding: 10px 20px;
     text-decoration: none;
-    color: #fff;
-    background-color: #4CAF50;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 20px;
 }
 
-.cta .btn:hover {
-    background-color: #45a049;
+.card-panel a.btn:hover {
+    background-color: #555; /* Hover dos botões pretos */
 }
 
-/* Estilos do rodapé */
+.card-panel p {
+    color: #888;
+    margin-top: 10px;
+}
+
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-carousel .item img {
+    width: auto; /* Ajusta o tamanho das imagens automaticamente */
+    max-height: 700px; /* Altura máxima das imagens */
+    max-width: 500%; /* Garante que as imagens não ultrapassem o contêiner */
+}
+
+.owl-carousel {
+    margin-top: 20px;
+}
+
+/* Estilo do Rodapé */
 footer {
-    background-color: #333;
+    background-color: #000; /* Fundo preto */
     color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Estilo para Perguntas Frequentes */
+.faq {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq h2 {
+    color: #000; /* Título das perguntas frequentes pretos */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.faq-item h3 {
+    color: #333; /* Título das perguntas frequentes cinza */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    display: none;
+    color: #555; /* Respostas das perguntas frequentes cinza escuro */
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.faq-item.active p {
+    display: block;
 }

@@ -1,31 +1,21 @@
-// JavaScript para controlar o carrossel de imagens
 
-var carousel = document.querySelector('.carousel-container');
-var slides = document.querySelectorAll('.slide');
-var prevBtn = document.getElementById('prevBtn');
-var nextBtn = document.getElementById('nextBtn');
-var slideWidth = slides[0].clientWidth + 10; // Largura do slide + margem
+let slideIndex = 0;
+const slides = document.querySelectorAll('.slide');
 
-var currentIndex = 0;
-
-// Função para mover para o slide anterior
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    updateCarousel();
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.transform = `translateX(${(i - index) * 100}%)`;
+    });
 }
 
-// Função para mover para o próximo slide
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    updateCarousel();
-}
+document.getElementById('prevBtn').addEventListener('click', () => {
+    slideIndex = (slideIndex > 0) ? slideIndex - 1 : slides.length - 1;
+    showSlide(slideIndex);
+});
 
-// Atualiza o carrossel para mostrar o slide atual
-function updateCarousel() {
-    var offset = -currentIndex * slideWidth;
-    carousel.style.transform = 'translateX(' + offset + 'px)';
-}
+document.getElementById('nextBtn').addEventListener('click', () => {
+    slideIndex = (slideIndex < slides.length - 1) ? slideIndex + 1 : 0;
+    showSlide(slideIndex);
+});
 
-// Event listeners para botões de navegação
-prevBtn.addEventListener('click', prevSlide);
-nextBtn.addEventListener('click', nextSlide);
+
