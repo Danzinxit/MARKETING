@@ -99,7 +99,7 @@ main {
 }
 
 .card-panel {
-    background-color: #fff; /* Fundo branco */
+    background-color: #333; 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -108,7 +108,7 @@ main {
 }
 
 .card-panel h2 {
-    color: #000; /* Títulos pretos */
+    color: white; /* Títulos pretos */
     font-size: 1.8em;
     margin-bottom: 20px;
 }
@@ -119,13 +119,13 @@ main {
 }
 
 .card-panel ul li {
-    color: #555;
+    color: white;
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
 .card-panel a.btn {
-    background-color: #333; /* Botões pretos */
+    background-color: rgb(28, 170, 158); /* Botões pretos */
     color: #fff;
     padding: 15px 30px;
     border: none;
@@ -137,7 +137,7 @@ main {
 }
 
 .card-panel a.btn:hover {
-    background-color: #555; /* Hover dos botões pretos */
+    background-color: red; /* Hover dos botões pretos */
 }
 
 .card-panel p {
@@ -293,3 +293,213 @@ body {
 .faq-item.active p {
     display: block;
 }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top-buttons a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.3s;
+}
+
+header .top-buttons a:hover {
+    color: #ffd700;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+.product-combo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #333;
+    border: 1px solid #555;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 2rem;
+}
+
+.combo-images {
+    display: flex;
+}
+
+.combo-item {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.combo-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.combo-item img:hover {
+    transform: scale(1.05);
+}
+
+.combo-item .original-price {
+    color: #ff6347;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.combo-item .link-info {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #1e90ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.combo-item .link-info:hover {
+    background-color: #1c86ee;
+    transform: scale(1.05);
+}
+
+.combo-details {
+    text-align: center;
+    max-width: 400px;
+}
+
+.combo-details h3 {
+    font-size: 2rem;
+    color: #ffd700;
+    margin-bottom: 0.5rem;
+}
+
+.combo-details p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.combo-details .btn {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.combo-details .btn:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+
+
+
+.primeira {
+    background-color: #111;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.payment-options {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.payment-option {
+    margin: 10px;
+}
+
+.imagensboleto {
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+}
+
+.cta {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px; /* Adiciona cantos arredondados */
+}
+
+.cta:hover {
+    background-color: #0c0;
+}
+
+.cta-small {
+    font-size: 0.8em;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.benefits {
+    margin-top: 20px;
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+}
+

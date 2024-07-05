@@ -7,9 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="main.css">
-    <style>
-        /* CSS inline pode ser adicionado aqui se necessário */
-    </style>
+    
 </head>
 <body>
     <header id="header">
@@ -18,7 +16,6 @@
         </div>
         <nav class="top-buttons">
             <a href="#" class="btn">Home</a>
-            <a href="produto.html" class="btn">Produtos</a>
             <a href="#" class="btn">Contato</a>
         </nav>
     </header>
@@ -29,7 +26,26 @@
             <p>Aprenda estratégias comprovadas para alavancar seu negócio online!
                 Escolha o Curso que quiser do seu Influencer Favorito!
             </p>
-            <a href="#" class="btn btn-primary">Adiquira Agora</a>
+           
+            <div class="primeira">
+                <h1>Cursos Marketing</h1>
+                <h2>Entre agora!</h2>
+                <div class="price">
+                    4x
+                    <span>5,34</span>
+                </div>
+                <p>ou R$19,90 à vista!</p>
+                <p>NÃO, NÃO SÃO 12 VEZES DE R$19,90!</p>
+                <div class="payment-options">
+                    <div class="payment-option">
+                        <img decoding="async" width="400" height="40" src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/PAGAMENTOS_1x.webp" class="attachment-full size-full wp-image-645 entered lazyloaded" alt="" data-lazy-srcset="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/PAGAMENTOS_1x.webp 400w,   https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/PAGAMENTOS_1x-300x30.webp 300w" data-lazy-sizes="(max-width: 400px) 100vw, 400px" data-lazy-src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/PAGAMENTOS_1x.webp" data-ll-status="loaded" sizes="(max-width: 400px) 100vw, 400px" srcset="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/PAGAMENTOS_1x.webp 400w,   https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/PAGAMENTOS_1x-300x30.webp 300w">
+                    </div>
+                </div>
+                <button class="cta" data-target="product-combo">GARANTIR MINHA VAGA!</button>
+
+                <a href="#" class="cta-small">Compra segura!</a>
+            
+            </div>
         </section>
 
         <section class="features">
@@ -78,16 +94,36 @@
                 <div class="item"><img src="https://primeiravenda24hrss.com.br/wp-content/uploads/2024/06/DEP5_1x.webp" alt="DEP5_1x.webp"></div>
             </div>
 
-            <div class="card-panel">
-                <h2>NÃO, NÃO SÃO 12 VEZES DE R$19,90!</h2>
-                <ul>
-                    <li>4x DE R$5,34</li>
-                    <li>ou R$19,90 à vista!</li>
-                </ul>
-                <a href="https://pay.cakto.com.br/CG6miE9" class="btn">GARANTIR MINHA VAGA!</a>
-                <p>Compra segura!</p>
-            </div>
+            <main>
+                <section id="product-combo" class="product-combo">
+                    <div class="combo-images">
+                        <div class="combo-item">
+                            <img src="imagens/thiago.jpeg" alt="Imagem 1">
+                            <p class="original-price">Original: R$ 499,00</p>
+                            <a href="curso-thiago.html" class="link-info btn-blue">Saiba mais</a>
+                        </div>
+                        <div class="combo-item">
+                            <img src="imagens/caio.jpeg" alt="Imagem 2">
+                            <p class="original-price">Original: R$ 299,00</p>
+                            <a href="curso-caio.html" class="link-info btn-blue">Saiba mais</a>
+                        </div>
+                        <div class="combo-item">
+                            <img src="imagens/WhatsApp Image 2024-07-03 at 21.33.02.jpeg" alt="Imagem 3">
+                            <p class="original-price">Original: R$ 399,00</p>
+                            <a href="curso-nomade.html" class="link-info btn-blue">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="combo-details">
+                        <h3>Combo Curso</h3>
+                        <p>Do mil Ao Milhão + Primeira venda em 24H + Nomade milionário por apenas R$ 19,90. Vai perder a chance?</p>
+                        <a href="#" class="btn btn-secondary">Comprar Agora</a>
+                    </div>
+                </section>
+        
+
+        
         </section>
+       
 
 
         <!-- Seção de Perguntas Frequentes -->
@@ -109,6 +145,8 @@
         <!-- Fim da Seção de Perguntas Frequentes -->
         
     </main>
+
+    
 
     <footer>
         <div class="footer-content">
@@ -146,6 +184,16 @@
                 $(this).find('p').slideToggle(300);
             });
         });
+
+        $(document).ready(function(){
+        $('.cta').click(function(e){
+            e.preventDefault();
+            var target = $(this).data('target');
+            $('html, body').animate({
+                scrollTop: $('#' + target).offset().top
+            }, 1000);
+        });
+    });
     </script>
 </body>
 </html>
