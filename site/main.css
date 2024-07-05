@@ -503,3 +503,35 @@ h1 {
     margin-bottom: 10px;
 }
 
+
+
+
+
+
+/*BOTAO PULSANTE
+
+.pulse {
+	animation: pulse 0.7s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 0px;
+	animation-direction: alternate;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+	0% {
+	-webkit-transform: scale(1);
+}
+100% {
+	-webkit-transform: scale(1.1);
+}
+} @keyframes pulse {
+	0% {
+	transform: scale(1);
+}
+100% {
+	transform: scale(1.1);
+}
+*/
+
