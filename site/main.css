@@ -510,7 +510,6 @@ h1 {
 
 
 
-<<<<<<< HEAD
 .p22{
 font-size: 200%;
 }
@@ -529,6 +528,30 @@ font-size: 200%;
 .cta:hover {
     background-color: darkorange;
 }
+
+#preco19{
+font-size: 190%;
+color: #4bbb1bff;
+}
+section.guarantee {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+section.guarantee h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+section.guarantee p {
+    font-size: 18px;
+    margin: 0;
+}
+
 
  .primeira2 .intro-text {
             flex: 1;
@@ -551,6 +574,38 @@ font-size: 200%;
             width: 35%; /* Ajuste o tamanho do texto conforme necessário */
         }
 
+        .floating-image {
+            animation: floatAnimation 1s infinite ease-in-out alternate;
+        }
+        
+        /* Animação de flutuação */
+        @keyframes floatAnimation {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-30px); /* Ajuste o valor conforme necessário */
+            }
+        }
+
+        @keyframes pulseAnimation {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* Aplicar a animação às imagens */
+        .pulsating-image {
+            animation: pulseAnimation 1s infinite;
+        }
+        
+        
 
     
         @media (max-width: 768px) {
@@ -558,7 +613,21 @@ font-size: 200%;
                 flex-wrap: wrap;
             }
             
+            .primeira2 {
+                flex-direction: column; /* Empilha os itens em telas menores */
+                text-align: center;
+            }
         
+            .primeira2 img {
+                width: 80%; /* Ajusta o tamanho da imagem em telas menores */
+                margin: 0 auto 1rem; /* Centraliza a imagem e adiciona espaçamento inferior */
+            }
+        
+            .primeira2 .course-info {
+                text-align: center; /* Centraliza o texto */
+            }
+
+           
             .card {
                 width: calc(50% - 20px); /* Ajuste para dois cartões por linha */
             }
@@ -588,35 +657,3 @@ font-size: 200%;
                 width: 100%; /* Um cartão por linha em telas menores */
             }
         }
-=======
-
-
-
-/*BOTAO PULSANTE
-
-.pulse {
-	animation: pulse 0.7s infinite;
-	margin: 0 auto;
-	display: table;
-	margin-top: 0px;
-	animation-direction: alternate;
-	-webkit-animation-name: pulse;
-	animation-name: pulse;
-}
-@-webkit-keyframes pulse {
-	0% {
-	-webkit-transform: scale(1);
-}
-100% {
-	-webkit-transform: scale(1.1);
-}
-} @keyframes pulse {
-	0% {
-	transform: scale(1);
-}
-100% {
-	transform: scale(1.1);
-}
-*/
-
->>>>>>> a604875cb1fa50e6d340eb49ac39a6a676dbbc55
