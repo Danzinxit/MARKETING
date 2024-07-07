@@ -1,6 +1,6 @@
 /* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', Arial, sans-serif;
     margin: 0;
     padding: 0;
     background: #fff; /* Fundo branco */
@@ -145,10 +145,14 @@ main {
     margin-top: 10px;
 }
 
+
 .owl-carousel .item {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', Arial, sans-serif;
 }
 
 .owl-carousel .item img {
@@ -171,7 +175,8 @@ footer {
 
 /* Estilo para Perguntas Frequentes */
 .faq {
-    background-color: #fff; /* Fundo branco */
+    background-color: #333;
+    border: 1px solid #555;
     padding: 20px;
     text-align: left;
     border-radius: 10px;
@@ -179,25 +184,25 @@ footer {
 }
 
 .faq h2 {
-    color: #000; /* Título das perguntas frequentes pretos */
-    font-size: 2em;
+    color: #ffffff; /* Título das perguntas frequentes pretos */
+    font-size: 200%;
     margin-bottom: 20px;
 }
 
-.faq-item {
-    margin-bottom: 15px;
-    cursor: pointer;
+.faq-item h3 {
+    color: #ffcc00; /* Cor do texto amarelo */
+    display: flex; /* Para alinhar o ícone à esquerda */
+    align-items: center; /* Alinhar verticalmente */
 }
 
-.faq-item h3 {
-    color: #333; /* Título das perguntas frequentes cinza */
-    font-size: 1.5em;
-    margin-bottom: 10px;
+.faq-icon {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 1.2em; /* Tamanho do ícone */
 }
 
 .faq-item p {
     display: none;
-    color: #555; /* Respostas das perguntas frequentes cinza escuro */
+    color: #eeeeee; /* Respostas das perguntas frequentes cinza escuro */
     font-size: 1.2em;
     line-height: 1.6;
 }
@@ -219,6 +224,9 @@ footer {
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
 }
+
+
+
 
 
 
@@ -429,9 +437,6 @@ footer p {
 }
 
 
-
-
-
 .primeira {
     background-color: #111;
     padding: 20px;
@@ -448,8 +453,8 @@ h1 {
 }
 
 .price {
-    font-size: 3em;
-    margin-bottom: 10px;
+    font-size: 700%;
+    margin-bottom: 20px;
 }
 
 .payment-options {
@@ -503,3 +508,115 @@ h1 {
     margin-bottom: 10px;
 }
 
+
+
+<<<<<<< HEAD
+.p22{
+font-size: 200%;
+}
+
+.cta {
+    background-color: orange;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: darkorange;
+}
+
+ .primeira2 .intro-text {
+            flex: 1;
+            max-width: 50%;
+            padding: 0 20px;
+        }
+   
+        .primeira2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .primeira2 img {
+            width: 40%; /* Ajuste o tamanho da imagem conforme necessário */
+        }
+
+        .intro-text {
+            width: 35%; /* Ajuste o tamanho do texto conforme necessário */
+        }
+
+
+    
+        @media (max-width: 768px) {
+            .cartoesper {
+                flex-wrap: wrap;
+            }
+            
+        
+            .card {
+                width: calc(50% - 20px); /* Ajuste para dois cartões por linha */
+            }
+
+            .product-combo {
+                flex-direction: column; /* Alinha os itens em coluna */
+                align-items: center; /* Centraliza os itens */
+            }
+        
+            .combo-images {
+                flex-direction: column; /* Coloca as imagens em coluna */
+                align-items: center; /* Centraliza as imagens */
+            }
+        
+            .combo-item {
+                width: 100%; /* Ocupa toda a largura */
+                margin-bottom: 1rem; /* Espaçamento entre os itens */
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .cartoesper {
+                flex-wrap: wrap;
+            }
+        
+            .card {
+                width: 100%; /* Um cartão por linha em telas menores */
+            }
+        }
+=======
+
+
+
+/*BOTAO PULSANTE
+
+.pulse {
+	animation: pulse 0.7s infinite;
+	margin: 0 auto;
+	display: table;
+	margin-top: 0px;
+	animation-direction: alternate;
+	-webkit-animation-name: pulse;
+	animation-name: pulse;
+}
+@-webkit-keyframes pulse {
+	0% {
+	-webkit-transform: scale(1);
+}
+100% {
+	-webkit-transform: scale(1.1);
+}
+} @keyframes pulse {
+	0% {
+	transform: scale(1);
+}
+100% {
+	transform: scale(1.1);
+}
+*/
+
+>>>>>>> a604875cb1fa50e6d340eb49ac39a6a676dbbc55
