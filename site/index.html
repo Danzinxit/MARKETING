@@ -110,28 +110,58 @@
             <p> Oferecemos uma garantia de 7 dias para reembolso. Se você não estiver satisfeito com o curso, pode solicitar seu dinheiro de volta dentro desse período.</p>
         </section>
 
-        <section class="faq" data-aos="fade-up">
-            <h2>Perguntas Frequentes</h2>
-            <div class="faq-item">
-                <h3><span class="faq-icon">▶︎</span> Como faço para acessar o curso após a compra?</h3>
-                <p>Você receberá um e-mail com as instruções de acesso imediatamente após a confirmação do pagamento.</p>
+        <div class="faq-section" data-aos="fade-up">
+            <div class="faq-heading">
+                <h2>Perguntas Frequentes</h2>
             </div>
-            <div class="faq-item">
-                <h3><span class="faq-icon">▶︎</span> O curso possui certificado de conclusão?</h3>
-                <p>Sim, ao finalizar todas as aulas e atividades você poderá emitir seu certificado digital.</p>
+            <div class="faq-toggle">
+                <div class="faq-item">
+                    <div class="faq-question" data-tab="1" aria-expanded="false">
+                        <a class="faq-title" tabindex="0">Quais são as formas de pagamento?</a>
+                        <span class="toggle-icon"><i class="fas fa-caret-right"></i></span>
+                    </div>
+                    <div class="faq-answer" data-tab="1">
+                        <p>Você poderá fazer o pagamento através do seu cartão de crédito, boleto ou pix.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-tab="2" aria-expanded="false">
+                        <a class="faq-title" tabindex="0">Como faço para acessar o curso após a compra?</a>
+                        <span class="toggle-icon"><i class="fas fa-caret-right"></i></span>
+                    </div>
+                    <div class="faq-answer" data-tab="2">
+                        <p>Você receberá um e-mail com as instruções de acesso imediatamente após a confirmação do pagamento.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" data-tab="3" aria-expanded="false">
+                        <a class="faq-title" tabindex="0">O curso possui certificado de conclusão?</a>
+                        <span class="toggle-icon"><i class="fas fa-caret-right"></i></span>
+                    </div>
+                    <div class="faq-answer" data-tab="3">
+                        <p>Sim, ao finalizar todas as aulas e atividades você poderá emitir seu certificado digital.</p>
+                    </div>
+                </div>
             </div>
-            <div class="faq-item">
-                <h3><span class="faq-icon">▶︎</span> É possível assistir às aulas em dispositivos móveis?</h3>
-                <p>Sim, nosso site é totalmente responsivo e você pode acessar o curso pelo celular, tablet ou computador.</p>
-            </div>
-        </section>
-    </main>sss  
+        </div>
+    </main>
+ 
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; Copywright © 2024 I Todos os direitos reservados.</p>
+    <footer class="footer">
+        <div class="footer-inner">
+            <div class="logo">
+            </div>
+            <div class="description">
+                <p>Os nossos cursos é dedicado a oferecer cursos acessíveis ministrados por influenciadores famosos. Nosso objetivo é proporcionar a todos a oportunidade de aprender com os melhores, usando o poder da internet. Não garantimos resultados financeiros específicos, pois estes variam com base no esforço individual, no conhecimento adquirido e nas condições do mercado.A existência de um produto e sua aquisição, por meio da plataforma, não podem ser consideradas como garantia de qualidade de conteúdo e resultado. Ao adquiri-lo, o comprador declara estar ciente dessas informações. Os termos e políticas da Kiwify podem ser acessados aqui, antes mesmo da conclusão da compra.</p>
+            </div>
+            <div class="legal">
+                <p>COPYRIGHT © Cursos Espetaculares</p>
+                <p>Copywright © 2024 I Todos os direitos reservados</p>
+                <p><a href="#">Termos de Uso</a> | <a href="#">Política de Privacidade</a></p>
+            </div>
         </div>
     </footer>
+    
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
@@ -139,10 +169,20 @@
     <script>
         
 
-            $('.faq-item').click(function(){
-                $(this).toggleClass('active');
-                $(this).find('p').slideToggle(300);
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const isOpen = this.getAttribute('aria-expanded') === 'true';
+
+                    this.setAttribute('aria-expanded', !isOpen);
+                    answer.setAttribute('aria-expanded', !isOpen);
+                    answer.style.display = !isOpen ? 'block' : 'none';
+                });
             });
+        });
 
             $('.cta').click(function(e){
                 e.preventDefault();
@@ -155,6 +195,8 @@
             AOS.init({
                 duration: 1200,
             });
+
+         
        
     </script>
 </body>
